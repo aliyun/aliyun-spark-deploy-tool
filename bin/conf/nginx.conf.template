@@ -1,0 +1,22 @@
+worker_processes  1;
+error_log  logs/error.log;
+error_log  logs/error.log  notice;
+error_log  logs/error.log  info;
+pid        logs/nginx.pid;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include         mime.types;
+    default_type    pplication/octet-stream;
+    sendfile        off;
+    keepalive_timeout  20;
+    gzip  on;
+    proxy_intercept_errors  off;
+
+    ${upstream_place_holder}
+
+    ${server_place_holder}
+}
