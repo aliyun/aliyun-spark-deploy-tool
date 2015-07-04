@@ -1,8 +1,8 @@
 #		Spark on ECS
 
 ##		介绍
-1. [quick start & manual](doc/manual.md)
-2. [打通SSH隧道](doc/ssh_tunnel.md)(可选)
+1. [脚本使用指南](doc/manual.md)
+2. [SSH隧道配置](doc/ssh_tunnel.md)
 
 ##		特性
 --------
